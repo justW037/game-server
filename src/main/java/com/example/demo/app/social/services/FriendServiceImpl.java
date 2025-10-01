@@ -25,11 +25,7 @@ public class FriendServiceImpl extends AbstractFriendService {
         // Implementation logic to unfollow a user
     }
 
-    @Override
-    public List<String> getFriends(String userId) {
-        // Implementation logic to get friends list
-        return List.of(); // Placeholder return
-    }
+
 
     @Override
     public List<String> getFriendRequests(String userId) {

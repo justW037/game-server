@@ -1,5 +1,6 @@
 package com.example.demo.base.social;
 
+import java.util.List;
 
 import com.example.demo.common.framework.social.services.FriendService;
 import com.example.demo.common.utils.ValidationUtils;
@@ -37,6 +38,12 @@ public abstract class AbstractFriendService implements FriendService {
         ValidationUtils.notSameUser(userId, targetUserId, "Cannot unfollow yourself");
 
         doUnfollowUser(userId, targetUserId);
+    }
+
+    @Override 
+    public List<String> getFriends(String userId) {
+        // Implementation logic to get friends list
+        return List.of(); // Placeholder return
     }
 
     protected abstract void doSendFriendRequest(String fromUserId, String toUserId);
